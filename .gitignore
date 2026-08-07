@@ -4,3 +4,4 @@ frontend/dist/
 frontend/dist_new/
 frontend/dist_old/
 *.log
+/app.jar
