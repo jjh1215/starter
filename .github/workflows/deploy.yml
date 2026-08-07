@@ -12,9 +12,7 @@ jobs:
 
       - name: Build jar
         working-directory: backend
-        run: |
-          source ~/.sdkman/bin/sdkman-init.sh
-          mvn -B -DskipTests package
+        run: mvn -B -DskipTests package
 
       - name: Upload jar artifact
         uses: actions/upload-artifact@v4
