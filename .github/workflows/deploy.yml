@@ -72,4 +72,5 @@ jobs:
           fi
           mv ~/starter/frontend/dist_new ~/starter/frontend/dist
           rm -rf ~/starter/frontend/dist_old
+          restorecon -Rv ~/starter/frontend/dist
           sudo /usr/sbin/nginx -s reload
